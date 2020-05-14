@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1c2939</color>
+    <color name="colorPrimaryDark">#1c2939</color>
+    <color name="colorAccent">#22446E</color>
+    <color name="circleProgressCompleteStartGradient">#00008b</color>
+    <color name="circleProgressCompleteEndGradient">#4760e9</color>
+    <color name="circleProgressIncompleteStartGradient">#D3D3D3</color>
+    <color name="circleProgressIncompleteEndGradient">#D3D3D3</color>
+</resources>

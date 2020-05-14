@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#16202A"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modify Record"
+        android:textColorHint="#616d77"
+        android:textColor="#c3c7d0"
+        android:textSize="25dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/subject_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:textColor="#C3C7D0"
+        android:textColorHint="#616d77"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonshape1"
+        android:ems="10"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/amount_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#C3C7D0"
+        android:ems="10"
+        android:textColorHint="#616d77"
+        android:hint="Amount"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="15dp"
+
+        android:background="@drawable/buttonshape1"
+        android:inputType="number"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/description_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#C3C7D0"
+        android:hint="Description"
+        android:textColorHint="#616d77"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonshape1"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/viewcat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textColorHint="#616d77"
+            android:hint="Category"
+            android:textColor="#C3C7D0"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:background="@drawable/buttonshape1"/>
+
+        <Button
+            android:id="@+id/cat_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="Selectcat"
+            android:text="Select Category"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:textColor="#1c2939"
+            android:background="@drawable/buttonshape" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:textColor="#1c2939"
+            android:background="@drawable/buttonshape"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#1c2939"
+            android:background="@drawable/buttonshape"/>
+    </LinearLayout>
+
+</LinearLayout>

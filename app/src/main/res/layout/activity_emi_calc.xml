@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#16202A"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EMI Calculator"
+            android:textColor="#C3C7D0"
+            android:layout_marginBottom="15dp"
+            android:textSize="25dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/etLoanAmount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Loan Amount"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="25dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/buttonshape1"
+            android:textColor="#C3C7D0"
+            android:ems="10"
+            android:textColorHint="#616d77"
+            />
+
+        <EditText
+            android:id="@+id/etInterest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Annuanl Interest Rate"
+            android:inputType="numberDecimal"
+            android:paddingLeft="20dp"
+            android:textColor="#C3C7D0"
+            android:ems="10"
+            android:textColorHint="#616d77"
+            android:background="@drawable/buttonshape1"
+            android:layout_marginBottom="25dp"
+            />
+
+        <Spinner
+            android:id="@+id/sp1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:textColor="#C3C7D0"
+            android:background="@drawable/buttonshapespin"
+            android:ems="10"
+            android:textColorHint="#616d77"
+            android:layout_marginBottom="25dp" />
+
+        <EditText
+            android:id="@+id/e1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter value"
+            android:paddingLeft="20dp"
+            android:background="@drawable/buttonshape1"
+            android:layout_marginBottom="25dp"
+            android:inputType="numberDecimal"
+            android:textColor="#C3C7D0"
+            android:ems="10"
+            android:textColorHint="#616d77"
+            />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="25dp"
+            android:text="Calculate"
+            android:background="@drawable/buttonshape"
+            android:textStyle="bold"
+            android:textColor="#1c2939"
+            />
+
+        <TextView
+            android:id="@+id/etAns"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:background="@drawable/buttonshape1"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:hint="Answer"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            >
+
+            <requestFocus />
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
+

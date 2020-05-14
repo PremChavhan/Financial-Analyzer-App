@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#16202A"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#16202A"
+    android:weightSum="2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+        <ListView
+            android:layout_height="490dp"
+            android:layout_width="match_parent"
+            android:id="@+id/list_view"
+            android:paddingTop="500dp"
+            android:padding="10dp"
+            android:divider="@null"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:dividerHeight="1dp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/empty"
+            android:layout_margin="3dp"
+            android:padding="3dp"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:textColor="#ffffff"
+            android:lines="5"
+            android:textSize="20dp"
+            android:text="Records are empty. Please add Record by opening Three dot menu and Select 'Add Record' item "/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</RelativeLayout>

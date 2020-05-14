@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "12617530944",
+    "firebase_url": "https://sqlite2-e36a9.firebaseio.com",
+    "project_id": "sqlite2-e36a9",
+    "storage_bucket": "sqlite2-e36a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12617530944:android:b5426f01f97bdf37f5a9a5",
+        "android_client_info": {
+          "package_name": "com.journaldev.sqlite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12617530944-lk94gv69h2gq236b80fn5d6d31mfoqkl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.journaldev.sqlite",
+            "certificate_hash": "de582f61ac68325773d6458d3ac00ee833dc1703"
+          }
+        },
+        {
+          "client_id": "12617530944-od226icqboivvaklkqvr6jl3uvsbov79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsDWDK7vXbxxVFxM9WRG-0cfTfzywiSGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12617530944-od226icqboivvaklkqvr6jl3uvsbov79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

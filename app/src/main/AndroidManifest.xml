@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.androcrush.sqlite2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/actuallogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/actuallogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.androcrush.sqlite2.CountryListActivity"
+            android:label="Change"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.androcrush.sqlite2.ModifyCountryActivity"
+            android:label="Change"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.androcrush.sqlite2.AddCountryActivity"
+            android:label="Change"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.androcrush.sqlite2.AddCat"
+            android:label="Change"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.androcrush.sqlite2.emi_calc"
+            android:label="Change"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.androcrush.sqlite2.Sip_calc"
+            android:label="Change"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.androcrush.sqlite2.CreditScore"
+            android:label="Change"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.androcrush.sqlite2.DisplayCredit"
+            android:label="Change"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.androcrush.sqlite2.Signin"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Change"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.androcrush.sqlite2.Category_list"
+            android:label="Change"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.androcrush.sqlite2.Createbackup"
+            android:label="Change"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.androcrush.sqlite2.Restorebackup"
+            android:label="Change"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name=".Smsreceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.READ_SMS">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#16202A"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#16202A"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Record"
+        android:textColor="#C3C7D0"
+        android:layout_marginBottom="15dp"
+        android:textSize="25dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/subject_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#C3C7D0"
+        android:ems="10"
+        android:textColorHint="#616d77"
+        android:paddingLeft="20dp"
+        android:hint="Title"
+        android:background="@drawable/buttonshape1">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/amount_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#C3C7D0"
+        android:textColorHint="#616d77"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/buttonshape1"
+        android:hint="Amount"
+        android:inputType="number"
+
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/description_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#C3C7D0"
+        android:hint="Description"
+        android:textColorHint="#616d77"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonshape1"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:weightSum="10">
+
+    <TextView
+        android:id="@+id/viewcat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:textColorHint="#616d77"
+        android:hint="Category"
+        android:textColor="#C3C7D0"
+        android:layout_weight="8"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:background="@drawable/buttonshape1"/>
+
+        <Button
+            android:id="@+id/cat_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="Selectcat"
+            android:textStyle="bold"
+            android:textColor="#1c2939"
+            android:text="Select Category"
+            android:layout_weight="2"
+            android:background="@drawable/buttonshape" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/add_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add Record"
+        android:textStyle="bold"
+        android:textColor="#1c2939"
+        android:background="@drawable/buttonshape" />
+
+</LinearLayout>
+</ScrollView>

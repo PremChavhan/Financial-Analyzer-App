@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Change</string>
+    <string name="add_record" />
+    <string name="empty_list_text" />
+    <string name="btn_delete" />
+    <string name="btn_update" />
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+    <string name="web_client_id" />
+    <string name="fielderror">Field is invalid</string>
+</resources>

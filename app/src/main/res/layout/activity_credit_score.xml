@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1c2939">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#16202A"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment History:"
+                        android:paddingBottom="10dp"
+                        android:textColor="#C3C7D0"
+                        android:textSize="18dp" />
+
+
+                    <CheckBox
+                        android:id="@+id/record_miss_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:text="You Have any record of Late or missed Payment?" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:text="How Late your payment were"
+                        android:textSize="17dp" />
+
+
+                    <RadioGroup
+                        android:id="@+id/Late_Payments_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/R_paid_30"
+                            android:layout_width="match_parent"
+                            android:textColor="#C3C7D0"
+                            android:paddingBottom="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="less than 30" />
+
+                        <RadioButton
+                            android:id="@+id/R_paid_60"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C3C7D0"
+                            android:paddingBottom="10dp"
+                            android:text="greater than 30 but less than 60" />
+
+                        <RadioButton
+                            android:id="@+id/R_paid_90"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:textColor="#C3C7D0"
+                            android:text="greater than 60 but less than 90" />
+
+                        <RadioButton
+                            android:id="@+id/R_paid_great_90"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C3C7D0"
+                            android:paddingBottom="10dp"
+                            android:text="greater than 90" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How recent you paid late?"
+                        android:paddingBottom="10dp"
+                        android:textColor="#C3C7D0"
+                        android:textSize="17dp" />
+
+                    <RadioGroup
+                        android:id="@+id/Recent_paid_late"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/R_late_30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:textColor="#C3C7D0"
+                            android:text="less than 30" />
+
+                        <RadioButton
+                            android:id="@+id/R_late_60"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C3C7D0"
+                            android:paddingBottom="10dp"
+                            android:text="greater than 30 but less than 60" />
+
+                        <RadioButton
+                            android:id="@+id/R_late_90"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C3C7D0"
+                            android:paddingBottom="10dp"
+                            android:text="greater than 60 but less than 90" />
+
+                        <RadioButton
+                            android:id="@+id/R_late_great_90"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C3C7D0"
+                            android:paddingBottom="10dp"
+                            android:text="greater than 90" />
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No of late payments"
+                        android:paddingBottom="10dp"
+                        android:textColor="#C3C7D0"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/No_late_payments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:paddingLeft="25dp"
+                        android:textColor="#C3C7D0"
+                        android:background="@drawable/buttonshape1"
+                        android:text="0"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How much you owe:"
+                        android:paddingBottom="10dp"
+                        android:textColor="#C3C7D0"
+                        android:textSize="17dp"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/Money_owe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="25dp"
+                        android:textColor="#C3C7D0"
+                        android:text="0"
+                        android:background="@drawable/buttonshape1"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </FrameLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#16202A"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credit Utilization:"
+                        android:paddingBottom="10dp"
+                        android:textColor="#C3C7D0"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:text="What is your Credit card limit?"
+                        android:textColor="#C3C7D0"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/Limit_for_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:paddingLeft="25dp"
+                        android:textColor="#C3C7D0"
+                        android:background="@drawable/buttonshape1"
+                        android:text="0"
+                        tools:ignore="HardcodedText"/>
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How much you spent for a month?"
+                        android:paddingBottom="10dp"
+                        android:textColor="#C3C7D0"
+                        android:textSize="17dp" />
+
+                    <EditText
+                        android:id="@+id/Spent_for_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="25dp"
+                        android:inputType="number"
+                        android:background="@drawable/buttonshape1"
+                        android:textColor="#C3C7D0"
+                        android:text="0"
+                        tools:ignore="HardcodedText"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#16202A"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credit History:"
+                        android:paddingBottom="10dp"
+                        android:textColor="#C3C7D0"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How long your account been open?"
+                        android:paddingBottom="10dp"
+                        android:textColor="#C3C7D0"
+                        android:textSize="17dp" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/Acc_open_30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C3C7D0"
+                            android:paddingBottom="10dp"
+                            android:text="less than six month" />
+
+                        <RadioButton
+                            android:id="@+id/Acc_open_60"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C3C7D0"
+                            android:paddingBottom="10dp"
+                            android:text="greater than six month but less than two and half years" />
+
+                        <RadioButton
+                            android:id="@+id/Acc_open_90"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C3C7D0"
+                            android:paddingBottom="10dp"
+                            android:text="greater than two and half year but less than five years" />
+
+                        <RadioButton
+                            android:id="@+id/Acc_open_great_90"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:textColor="#C3C7D0"
+                            android:text="greater than five years" />
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:text="How long it’s been since those accounts were used?"
+                        android:textSize="17dp" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/Acc_used_30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C3C7D0"
+                            android:paddingBottom="10dp"
+                            android:text="less than six month" />
+
+                        <RadioButton
+                            android:id="@+id/Acc_used_60"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C3C7D0"
+                            android:paddingBottom="10dp"
+                            android:text="greater than six month but less than two and half years" />
+
+                        <RadioButton
+                            android:id="@+id/Acc_used_90"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C3C7D0"
+                            android:paddingBottom="10dp"
+                            android:text="greater than two and half year but less than five years" />
+
+                        <RadioButton
+                            android:id="@+id/Acc_used_great_90"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#C3C7D0"
+                            android:paddingBottom="10dp"
+                            android:text="greater than five years" />
+                    </RadioGroup>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#16202A"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credits:"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credits you have:"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:textSize="17dp" />
+
+                    <CheckBox
+                        android:id="@+id/check_CreCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:text="Credit Card" />
+
+                    <CheckBox
+                        android:id="@+id/check_StoCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:text="Store Cards" />
+
+                    <CheckBox
+                        android:id="@+id/check_VehFinance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:text="Motor Vehicle Finance" />
+
+                    <CheckBox
+                        android:id="@+id/check_PerLoan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:text="Personal Loan (Installment Loan)" />
+
+                    <CheckBox
+                        android:id="@+id/check_PaydayLoan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:text="Payday Loan" />
+
+                    <CheckBox
+                        android:id="@+id/check_RetailLoan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:text="Retail Loans" />
+
+                    <CheckBox
+                        android:id="@+id/check_Mort"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:text="Mortgages" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#16202A"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Credit:"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/check_App_CreditCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#C3C7D0"
+                        android:paddingBottom="10dp"
+                        android:text="Have you applied for new credit card" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/GetCreditScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#1c2939"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonshapespin"
+                android:text="Generate Credit Score"
+                />
+            <TextView
+                android:id="@+id/CredScore"
+                android:layout_width="200dp"
+                android:paddingTop="25dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
