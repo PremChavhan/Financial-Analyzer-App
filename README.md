@@ -1,4 +1,4 @@
-# Financial-Analyzer-App
+# Change-The Financial Analyzer App
 [![Watch the video]()](https://gfycat.com/uniqueenchantingaldabratortoise)
 <table style="width:100%">
   <tr>
