@@ -2,7 +2,7 @@
 [![Watch the video]()](https://gfycat.com/uniqueenchantingaldabratortoise)
 <table style="width:100%">
   <tr>
-    <th><b>SplashActivity and MainActivity<b></b></th>
+    <th>SplashActivity and MainActivity</th>
     <th>Add Record</th>
   </tr>
   <tr>
