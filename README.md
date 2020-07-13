@@ -7,7 +7,7 @@
   </tr>
   <tr>
     <td align="center"><img src="gifs/gif1.gif" width="80%"/></td>
-    <td align="center"><img src="gifs/gif2.gif" width="48%"/></td> 
+    <td align="center"><img src="gifs/gif2.gif" width="50%"/></td> 
   </tr>
 </table>
 
