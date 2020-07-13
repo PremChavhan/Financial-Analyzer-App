@@ -8,7 +8,7 @@
   </tr>
   <tr>
     <td align="center"><img src="gifs/gif1.gif" width="80%"/></td>
-    <td align="center"><img src="gifs/gif2.gif" width="50%"/></td> 
+    <td align="center"><img src="gifs/gif2.gif" width="80%"/></td> 
     <td align="center"><img src="gifs/gif3.gif" width="80%"/></td>
   </tr>
    <tr>
@@ -18,7 +18,7 @@
   </tr>
   <tr>
     <td align="center"><img src="gifs/gif4.gif" width="80%"/></td>
-    <td align="center"><img src="gifs/gif5.gif" width="50%"/></td> 
+    <td align="center"><img src="gifs/gif5.gif" width="80%"/></td> 
     <td align="center"><img src="gifs/gif6.gif" width="80%"/></td>
   </tr>
 </table>
