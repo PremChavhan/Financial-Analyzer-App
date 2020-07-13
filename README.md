@@ -7,9 +7,9 @@
     <th>Emi Calculator</th>
   </tr>
   <tr>
-    <td align="center"><img src="gifs/gif1.gif" width="33%"/></td>
-    <td align="center"><img src="gifs/gif2.gif" width="33%"/></td> 
-    <td align="center"><img src="gifs/gif3.gif" width="33%"/></td>
+    <td align="center"><img src="gifs/gif1.gif" width="55%"/></td>
+    <td align="center"><img src="gifs/gif2.gif" width="55%"/></td> 
+    <td align="center"><img src="gifs/gif3.gif" width="55%"/></td>
   </tr>
    <tr>
     <th>SIP Calculator</th>
@@ -17,9 +17,9 @@
     <th>Backup & Restore, Logout</th>
   </tr>
   <tr>
-    <td align="center"><img src="gifs/gif4.gif" width="33.33%"/></td>
-    <td align="center"><img src="gifs/gif5.gif" width="33.33%"/></td> 
-    <td align="center"><img src="gifs/gif6.gif" width="33.33%"/></td>
+    <td align="center"><img src="gifs/gif4.gif" width="55%"/></td>
+    <td align="center"><img src="gifs/gif5.gif" width="55%"/></td> 
+    <td align="center"><img src="gifs/gif6.gif" width="55%"/></td>
   </tr>
 </table>
 
